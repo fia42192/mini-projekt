@@ -1,0 +1,38 @@
+{
+    "\u0160tika": [
+        {
+            "N\u00e1zev": "\u0160tika",
+            "Velikost": 50
+        }
+    ],
+    "Kapr": [
+        {
+            "N\u00e1zev": "Kapr",
+            "Velikost": 10
+        }
+    ],
+    "Kapr_2": [
+        {
+            "N\u00e1zev": "Kapr_2",
+            "Velikost": 15
+        }
+    ],
+    "Sumec": [
+        {
+            "N\u00e1zev": "Sumec",
+            "Velikost": 120
+        }
+    ],
+    "Okoun": [
+        {
+            "N\u00e1zev": "Okoun",
+            "Velikost": 27
+        }
+    ],
+    "Cand\u00e1t": [
+        {
+            "N\u00e1zev": "Cand\u00e1t",
+            "Velikost": 40
+        }
+    ]
+}
