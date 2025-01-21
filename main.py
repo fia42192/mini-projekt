@@ -144,8 +144,12 @@ while True:
             # Otevře soubor ke čtení
             with open("ryby.json", "r") as openfile:
                 Slovnik_ulovenych_ryb = json.load(openfile)
-                #Vezme se první věc ze seznamu (value) a vezme se z něj Název ryby, za něj velikost ryby
-            ryby = [(hodnota[0]['Název'], hodnota[0]['Velikost']) for hodnota in Slovnik_ulovenych_ryb.values()]
+            #Vezme se první věc ze seznamu (value) a vezme se z něj Název ryby, za něj velikost ryby
+            ryby = []
+            for hodnota in Slovnik_ulovenych_ryb.values():
+                nazev = hodnota[0]["Název"]
+                velikost = hodnota[0]["Velikost"]
+                ryby.append((nazev, velikost))
             #Ryby se seřadí od největšího po nejmenší (pomocí reverse=True)
             serazene_ryby = sorted(ryby, key = itemgetter(1), reverse=True)
             print(', '.join(f"{nazev} {velikost} cm" for nazev, velikost in serazene_ryby))
